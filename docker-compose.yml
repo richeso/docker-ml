@@ -1,0 +1,16 @@
+version: '2'
+services:
+
+  jupyter:
+    build: ./
+    container_name: mydatascience
+    ports:
+      - "8888:8888"
+      - "6006:6006"
+    volumes:
+      - ./home:/home
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "300k"
+        max-file: "3"
