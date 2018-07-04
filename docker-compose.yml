@@ -9,6 +9,7 @@ services:
       - "6006:6006"
     volumes:
       - ./home:/home
+      - ./home/retrain/tmp_model:/tmp
     logging:
       driver: "json-file"
       options:

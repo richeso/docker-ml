@@ -38,7 +38,7 @@ RUN pip3 install opencv-python
 RUN pip3 install scikit-image
 RUN pip3 install tensorflow==1.7.0
 RUN pip3 install seaborn
-RUN pip3 install tdqm
+RUN pip3 install tqdm
 RUN python3 -m ipykernel.kernelspec
 
 # For Jupyter notebook
